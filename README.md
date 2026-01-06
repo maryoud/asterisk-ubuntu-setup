@@ -1,15 +1,15 @@
-#Configuration sur serveur Asterisk sur ubuntu-22 
+# Configuration sur serveur Asterisk sur ubuntu-22 
 
 Ce dépôt contient :
 - les fichiers de configuration Asterisk
 - Les commandes nécessaires à l'installation et à la configuration
 
-## Structure
+# Structure
 
 - config/ : 3 fichiers .conf
 - commands/ : commandes utiles
 
-#Obligatoire à lire pour comprendre
+# Obligatoire à lire pour comprendre
 
 - il faut que tout les équipements soient dans le même réseau (serveur et clients)
 
@@ -21,7 +21,7 @@ Ce dépôt contient :
 
 - Editeur preferé 'gedit'
 
-#Installation des softphones clients:
+# Installation des softphones clients:
 
 - microsip ou Zoiper (android ou windows) 
 
