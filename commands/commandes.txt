@@ -1,30 +1,30 @@
-# ce fichier contient tout les commandes necessaires pour installer et configurer asterisk sur ubuntu
-#le dossier config contient les fichiers de configuration à modifier
-#configuration des fichiers:    3 fichiers (sip.conf, extensions.conf et voicemail.conf)
+# Voici les commnades nécessaires pour l'installation et la configuration d'Asterisk
 
 #installer asterisk:
+
  sudo install asterisk -y
+
 #vérification de l'état:
+
  sudo systemctl status asterisk
+
 #activation :
+
  sudo systemctl start asterisk 
+
 #création de backup:
- sudo mv sip.conf sip.conf.backup  
-#( même pour les autres)
-#
-configuration: sudo gedit sip.conf
-# (emplacement  /etc/asterisk/ )  (même pour les autres)
-#vérification:
+
+ sudo mv sip.conf sip.conf.backup     #( même pour les autres)
+
+
+#le serveur:
+
  sudo asterisk -r
+
 #redémarrer asterisk:
+
   reload
-#verification:
+
+#Voir les lignes:
+
  sip show peers
-
-#installation de softphone: microsip ou zoiper dans les deux clients (windows ou android)
-tous les équipements soient dans le même réseau
-configuration de softphone: créer un compte sip( nom et password même celui configuré 
-                                             dans le  fichier),  domain ou server ip ( ip du ubuntu)
-
-Tester les deux clients
-
